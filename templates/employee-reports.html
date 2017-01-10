@@ -1,0 +1,10 @@
+<view title="'Direct Reports'">
+    <content has-header="true">
+        <list>
+            <item ng-repeat="employee in employees" type="item-text-wrap" href="#/employee/{{employee.id}}">
+                <!-- Custom Directive-->
+                <employee-data data="employee"></employee-data>
+            </item>
+        </list>
+    </content>
+</view>
